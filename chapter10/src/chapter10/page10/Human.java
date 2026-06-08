@@ -1,0 +1,38 @@
+package chapter10.page10;
+
+public class Human {
+	private String name;
+	private int age;
+	
+	Human(){
+		this(null,0);
+	}
+	
+	Human(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public void eat() {
+		System.out.printf("%s이가 밥을 먹었습니다.(%d살)\n",name,age);
+	}
+	public void sleep() {
+		System.out.printf("%s이가 잠을 잡니다.(%d살)\n",name,age);
+	}
+}
