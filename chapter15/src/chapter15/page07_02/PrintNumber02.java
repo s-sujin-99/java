@@ -1,6 +1,6 @@
-package chapter15.page07;
+package chapter15.page07_02;
 
-public class PrintNumber extends Thread{
+public class PrintNumber02 implements Runnable{
 	
 	@Override
 	public void run() {
