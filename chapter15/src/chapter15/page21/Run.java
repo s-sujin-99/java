@@ -23,7 +23,10 @@ public class Run {
 		//현재 작동되고 있는 스레드 이름 
 		System.out.printf("현재 작동되고 있는 thread1 이름 : %s\n",thread.getName());
 		System.out.printf("현재 작동되고 있는 thread2 이름 : %s\n",thread2.getName());
-		
+		//스레드 우선순위
+		System.out.printf("현재 작동되고 있는 thread1 우선순위 : %d\n", thread.getPriority());
+		System.out.printf("현재 작동되고 있는 thread2 우선순위 : %d\n", thread2.getPriority());
+				
 		System.out.println("main - The end");
 	}
 }
