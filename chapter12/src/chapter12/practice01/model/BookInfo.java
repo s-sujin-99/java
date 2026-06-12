@@ -16,7 +16,7 @@ public class BookInfo implements AutoCloseable{
 		super();
 		this.title = title;
 		this.genre = genre;
-		this.rentCount = 5;
+		this.rentCount = rentCount;
 		bookList = new String[5];
 	}
 

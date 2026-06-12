@@ -12,7 +12,7 @@ public class BookController {
 		BOOK_COUNT = 5;
 	}
 
-	public BookInfo[] BookController() {
+	public BookInfo[] bookController() {
 		bookInfo = new BookInfo[5];
 		bookInfo[0] = new BookInfo("자바의 정석", "IT", 45);
 		bookInfo[1] = new BookInfo("혼공 C언어", "IT", 15);
@@ -29,8 +29,8 @@ public class BookController {
 
 	public int sumRentCount() {
 		int sum = 0;
-		for (BookInfo bookInfo2 : bookInfo) {
-			sum += bookInfo2.getRentCount();
+		for (int i = 0; i < bookInfo.length; i++) {
+			sum += bookInfo[i].getRentCount();
 		}
 
 		return sum;
@@ -38,7 +38,7 @@ public class BookController {
 
 	public double[] avgRentCount() {
 		double[] sumAvgArr = new double[2];
-		sumAvgArr[0] = sumRentCount();
+		sumAvgArr[0] = (double)sumRentCount();
 		sumAvgArr[1] = sumAvgArr[0] / BOOK_COUNT;
 
 		return sumAvgArr;
