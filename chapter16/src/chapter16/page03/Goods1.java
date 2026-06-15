@@ -1,0 +1,20 @@
+package chapter16.page03;
+
+// 상품 클래스
+public class Goods1 {
+	private Apple apple;
+
+	public Goods1(Apple apple) {
+		super();
+		this.apple = apple;
+	}
+
+	public Apple getApple() {
+		return apple;
+	}
+
+	public void setApple(Apple apple) {
+		this.apple = apple;
+	}
+
+}
