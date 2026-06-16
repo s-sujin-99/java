@@ -21,18 +21,23 @@ public class MovieMenu {
 
 			switch (no) {
 			case 1:
+				System.out.println("========== 영화 정보 출력 ==========");
 				printMovie();
 				break;
 			case 2:
+				System.out.println("========== 시청 시간 기준 정렬 ==========");
 				getSortCount();
 				break;
 			case 3:
+				System.out.println("========== 콘텐츠 등급 판별 ==========");
 				getFamousMovie();
 				break;
 			case 4:
+				System.out.println("========== OTT 시청 통계 ==========");
 				avgWatchTime();
 				break;
 			case 5:
+				System.out.println("========== 영화 찾기 ==========");
 				searchMovie();
 				break;
 			case 6:

@@ -36,6 +36,7 @@ public class Run {
 				break;
 
 			default:
+				System.out.println("다시 입력해주세요.(1부터 6까지만)");
 				break;
 			}
 		}
