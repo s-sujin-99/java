@@ -23,9 +23,7 @@ public class Run {
 		integers1.set(1, null);
 //		integers1.add(3);
 //		integers1.remove(0);
-		for (Integer integer : integers1) {
-			System.out.println(integer);
-		}
+		System.out.println(integers1);
 
 		// =============================================
 		// List 전체 삭제
@@ -36,7 +34,7 @@ public class Run {
 		
 		System.out.println("list1.add() : " +list1);
 		System.out.println();
-		list1.clear();
+//		list1.clear();
 		
 		System.out.println("list1.clear() : " + list1);
 		
@@ -53,8 +51,9 @@ public class Run {
 		list4.add("마");
 		
 		String[] oArray = list4.toArray(new String[0]);
-		for (String string : oArray) {
-			System.out.println(string);
+		System.out.println(Arrays.toString(oArray));
+		if (list4.contains("가") == true) {
+			System.out.println("list에 contains 기능이 있어요.");
 		}
 		
 	}

@@ -64,8 +64,6 @@ public class BookMenu {
 		
 	}
 
-
-
 	private void printBooks() {
 		List<Book> book = bookController.printBooks();
 		for (Book book2 : book) {
@@ -73,14 +71,10 @@ public class BookMenu {
 		}
 	}
 
-
-
 	private void avgRentCount() {
 		double[] book = bookController.avgRentCount();
 		System.out.printf("전체 도서 대여 횟수 합계 : %.0f\n전체 도서 대여 횟수 평균 : %.2f\n",book[0],book[1]);
 	}
-
-
 
 	private void famousBook() {
 		List<Book> book = bookController.printBooks();
@@ -92,8 +86,6 @@ public class BookMenu {
 		
 	}
 
-
-
 	private void sortedBookList() {
 		List<Book> book = bookController.sortedBookList();
 		for (Book book2 : book) {
@@ -102,8 +94,6 @@ public class BookMenu {
 		
 	}
 
-
-
 	private void searchBook() {
 		System.out.println("찾고싶은 책을 검색해주세요.");
 		String name = Run.sc.nextLine();
@@ -111,7 +101,6 @@ public class BookMenu {
 		System.out.println(findBook);
 	}
 	
-
 	private void rankBooks() {
 		List<Book> book = bookController.printBooks();
 		List<Integer> ranks = bookController.rankBooks();
